@@ -500,8 +500,4 @@ No source-code changes should be necessary between local and production; configu
 - Observability with metrics, structured logs and tracing
 - Production-grade broker clustering and durable messaging where required
 
-## Interview Talking Points
 
-A concise way to explain the project:
-
-> "I built an end-to-end IoT monitoring system where Python simulates multiple patient devices and publishes vitals over MQTT. Spring Boot acts as the processing layer: it validates readings, persists them in PostgreSQL, evaluates demo alert rules and prevents duplicate active alerts. The backend then broadcasts the current bed state and alert events through STOMP over WebSockets, so a React dashboard updates in real time without polling or refreshing. I kept it intentionally as a modular monolith because the main goal was a reliable IoT-to-cloud-to-UI pipeline rather than unnecessary microservices."
